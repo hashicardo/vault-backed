@@ -27,6 +27,11 @@ This is a little diagram of more or less how this flow works with the required p
 
 
 ## Steps
+0. Clone this repo and change to the dir:
+```bash
+git clone https://github.com/hashicardo/vault-backed.git && cd vault-backed
+```
+
 1. Create the `setup-admin` policy and create a token. This policy is the "least privileged" to perform the necessary actions such as creating the "platform" namespace, enabling and configuring the AWS secrets engine, enabling the `jwt` auth method, etc.
 
     > NOTE: this policy only allows the setup admin to create an auth method called jwt. No other name is allowed.
